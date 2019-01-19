@@ -17,7 +17,7 @@
     
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <style>#map_cea19822ebcc414eaca7bd4677e78865 {
+    <style>#map_c0a2d26fcdfe491e96a03c1de6c91bad {
         position: relative;
         width: 100.0%;
         height: 100.0%;
@@ -28,7 +28,7 @@
 </head>
 <body>    
     
-    <div class="folium-map" id="map_cea19822ebcc414eaca7bd4677e78865" ></div>
+    <div class="folium-map" id="map_c0a2d26fcdfe491e96a03c1de6c91bad" ></div>
 </body>
 <script>    
     
@@ -36,8 +36,8 @@
         var bounds = null;
     
 
-    var map_cea19822ebcc414eaca7bd4677e78865 = L.map(
-        'map_cea19822ebcc414eaca7bd4677e78865', {
+    var map_c0a2d26fcdfe491e96a03c1de6c91bad = L.map(
+        'map_c0a2d26fcdfe491e96a03c1de6c91bad', {
         center: [28.5799217, 77.0546595],
         zoom: 8,
         maxBounds: bounds,
@@ -49,8 +49,8 @@
 
     
     
-    var tile_layer_956ae64be0a74e82a4cbcc5bf254f51c = L.tileLayer(
-        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    var tile_layer_0ad005efd34b4500bb18fd57812a5281 = L.tileLayer(
+        'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
         {
         "attribution": null,
         "detectRetina": false,
@@ -61,5 +61,39 @@
         "opacity": 1,
         "subdomains": "abc",
         "tms": false
-}).addTo(map_cea19822ebcc414eaca7bd4677e78865);
+}).addTo(map_c0a2d26fcdfe491e96a03c1de6c91bad);
+    
+        var marker_1c71cb11797e45038cb9910b82a40f03 = L.marker(
+            [28.5799217, 77.0546595],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_c0a2d26fcdfe491e96a03c1de6c91bad);
+        
+    
+
+                var icon_28e92955474a4d9289d28f88d444af61 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'gray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1c71cb11797e45038cb9910b82a40f03.setIcon(icon_28e92955474a4d9289d28f88d444af61);
+            
+    
+            var popup_749f3d958af0455a94471a99a25cfffa = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_29d0100321b84ba7abaee4475e318c1f = $(`<div id="html_29d0100321b84ba7abaee4475e318c1f" style="width: 100.0%; height: 100.0%;">Punjab National National Bank</div>`)[0];
+                popup_749f3d958af0455a94471a99a25cfffa.setContent(html_29d0100321b84ba7abaee4475e318c1f);
+            
+
+            marker_1c71cb11797e45038cb9910b82a40f03.bindPopup(popup_749f3d958af0455a94471a99a25cfffa)
+            ;
+
+            
+        
 </script>
